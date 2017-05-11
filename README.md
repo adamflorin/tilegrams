@@ -45,6 +45,8 @@ The Maker also depends on a pre-release `npm` version of `topogram`
 ## Data Sources
 [US Population Data](http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=PEP_2015_PEPANNRES&prodType=table)
 
+[US County Population Data](https://www.census.gov/data/tables/2016/demo/popest/counties-total.html)
+
 [Electoral Votes Data](https://www.archives.gov/federal-register/electoral-college/allocation.html)
 
 [GDP Data](http://www.bea.gov/itable/)
@@ -54,6 +56,9 @@ The Maker also depends on a pre-release `npm` version of `topogram`
 ## Base Map Sources
 US states map:
 [Natural Earth Data](http://www.naturalearthdata.com/downloads/)
+
+US county map:
+[US Census Bureau](https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html)
 
 <!---UK constituency map:
 [Ordnancesurvey.co.uk](https://www.ordnancesurvey.co.uk/opendatadownload/products.html)

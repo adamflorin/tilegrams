@@ -1,6 +1,7 @@
 import {csvParseRows} from 'd3-dsv'
 import geographyResource from './GeographyResource.js'
 import populationCsv from '../../data/us/population-by-state.csv'
+import usCountyPopulationCsv from '../../data/us/population-by-county.csv'
 import electoralCollegeCsv from '../../data/us/electoral-college-votes-by-state.csv'
 import gdpCsv from '../../data/us/gdp-by-state.csv'
 // import ukConstituency from '../../data/uk/constituencies.csv'
@@ -22,6 +23,12 @@ class DatasetResource {
         data: this.parseCsv(populationCsv, 'United States'),
         geography: 'United States',
         defaultResolution: 1000000,
+      },
+      {
+        label: 'U.S. County Population 2016',
+        data: this.parseCsv(usCountyPopulationCsv, 'United States - Counties'),
+        geography: 'United States - Counties',
+        defaultResolution: 10000,
       },
       {
         label: 'U.S. Electoral College 2016',
