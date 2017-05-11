@@ -12,7 +12,9 @@ import {canvasDimensions} from '../constants'
 const topogram = topogramImport()
 
 const MIN_PATH_AREA = 0.5
-const MAX_ITERATION_COUNT = 20
+
+// FIXME:TEMP: don't call topogram() repeatedly
+const MAX_ITERATION_COUNT = -1
 
 export default class MapGraphic extends Graphic {
   constructor() {
@@ -21,7 +23,9 @@ export default class MapGraphic extends Graphic {
     this._iterationCount = 0
     this._generalBounds = [[Infinity, Infinity], [-Infinity, -Infinity]]
     this.getFeatureAtPoint = this.getFeatureAtPoint.bind(this)
-    topogram.iterations(1)
+
+    // FIXME:TEMP: do multiple iterations in single topogram() call
+    topogram.iterations(20)
   }
 
   /** Apply topogram on topoJson using data in properties */
