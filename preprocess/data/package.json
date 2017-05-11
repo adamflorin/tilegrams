@@ -1,0 +1,17 @@
+{
+  "name": "parse-census-csv",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "abbreviate": "0.0.3",
+    "csv-parse": "^1.2.0",
+    "numeral": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
