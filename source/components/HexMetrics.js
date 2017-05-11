@@ -176,7 +176,7 @@ export default class HexMetrics extends React.Component {
           >
             {count.disable ? 'No Data' : this._drawHexagon(count.key)}
           </div>
-          <div>{keyString.name_short || count.key}</div>
+          <div>{keyString ? keyString.name_short : count.key}</div>
           <div>{adjustString}</div>
         </div>
       )
