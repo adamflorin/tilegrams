@@ -428,7 +428,8 @@ export default class GridGraphic extends Graphic {
       this._drawMarqueeSelection()
     }
 
-    this._drawClusterLabels()
+    // FIXME:TEMP: don't draw labels
+    // this._drawClusterLabels()
   }
 
   _positionClusterLabels() {
